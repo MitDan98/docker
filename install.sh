@@ -3,7 +3,7 @@
 #Easy way
 sus = $?
 cat /etc/os-release
-if [ -r "CentOS" ]; then
+if [ -r "cat /etc/os-release CentOS" ]; then
         sudo yum update
           if [ [ $sus -ne 0 ] ; then 
               echo " try agian... "
