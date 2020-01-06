@@ -2,9 +2,9 @@
 #DOCKER Install 
 #Easy way
 #Update system and install docker
-sus = $?
 sudo yum update
 sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+sus = $?
 if [ $sus -ne 0 ]; then 
      echo " Docker was install already... "
      exit 1
