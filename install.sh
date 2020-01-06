@@ -24,7 +24,7 @@ fi
 #
 #
 #Install docker-ce and enable
-sudo yum install docker-ce docker-ce-cli containerd.io
+sudo yum install docker-ce docker-ce-cli containerd.io -y
 if [ $sus -ne 0 ]; then 
      echo " Docker-ce was install already... "
      exit 1
@@ -70,7 +70,7 @@ if [ $sus -ne 0 ]; then
 else 
        echo " Python pip has been installed with succes"
 fi  
-sudo pip install docker-compose
+sudo pip install docker-compose -y
  if [ $sus -ne 0 ]; then
       echo " docker-compose was installed already "
       exit 1
