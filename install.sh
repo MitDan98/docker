@@ -17,7 +17,7 @@ fi
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 if [ $sus -ne 0 ]; then 
        echo " This repo it was add already "
-       exit1
+       exit 1
 else 
        echo "Repo has been add with succes..."
 fi
